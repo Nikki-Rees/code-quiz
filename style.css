@@ -1,0 +1,33 @@
+
+
+.container {
+    border: 20px;
+    padding: 100px 150px 100px 150px;
+    align-self: center;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75%;
+    background-color: darkmagenta;
+    border-color: white;
+    border: 5px;
+    color: white;
+
+}
+
+.questionContainer{
+    margin: 10px;
+    border: 10px;
+}
+
+.buttonContainer{
+    margin: 10px;
+    border:10px;
+}
+
+#timer {
+    font-size: 20px;
+}

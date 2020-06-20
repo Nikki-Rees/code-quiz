@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <title>Code quiz</title>
+</head>
+
+<body>
+
+    <header class="Timer">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="leaderboard.html">Code quiz leaderboard!</a>
+            <span class="navbar-text">
+                <div id="timer"></div>
+            </span>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="intro">
+            <h1>Take the code quiz!</h1>
+
+            <p>Here are some instructions for the code quiz;
+            <ul>
+                <li>Try to answer these code related questions within 60 seconds</li>
+                <li>If you answer a question incorrectly, 10 seconds will be subtracted from the clock</li>
+                <li>When the game is over, you can save your initials and score to the leaderboard</li>
+                <li>Click the start button to start the quiz and the timer!</li>
+            </ul>
+            </p>
+
+            <button id="start">
+                Start the quiz!
+            </button>
+
+        </div>
+
+        <div id="quizContainer" style="display:none">
+
+
+            <div id="questionOneWrapper">
+                <div class="questionContainer">
+                    <h2>Arrays in JavaScript can be used to store_______?</h2>
+                </div>
+                <div class="buttonContainer">
+                    <button class="btnW">numbers and strings</button>
+                    <button class="btnW">other arrays</button>
+                    <button class="btnW">booleans</button>
+                    <button class="btnC">all of the above</button>
+                </div>
+
+            </div>
+
+            <div id="questionTwoWrapper" style="display:none">
+                <div class="questionContainer">
+                    <h2>The condition in an if / else statement is enclosed in _______?</h2>
+                </div>
+
+                <div class="buttonContainer">
+
+                    <button class="btnW">quotes</button>
+                    <button class="btnW">curly brackets</button>
+                    <button class="btnC">parentheses</button>
+                    <button class="btnW">square brackets</button>
+
+                </div>
+
+            </div>
+
+            <div id="questionThreeWrapper" style="display:none">
+                <div class="questionContainer">
+                    <h2> Common data types do not include_______?</h2>
+                </div>
+                <div class="buttonContainer">
+                    <button class="btnW">strings</button>
+                    <button class="btnW">booleans</button>
+                    <button class="btnC">console.log</button>
+                    <button class="btnW">numbers</button>
+                </div>
+
+            </div>
+
+            <div class="status">
+                <p></p>
+            </div>
+
+        </div>
+
+
+        <div id="score" style="display:none;">
+
+            <h2>Your score is: <div class="displayScore"></div>
+            </h2>
+            <div class="input-group mb-3" id="input">
+                <input type="text" class="form-control" placeholder="Enter your initials"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary submit" type="button">Submit </button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
